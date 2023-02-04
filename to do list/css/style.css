@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+body {
+  background-color: burlywood;
+}
+
+.block {
+  width: 1200px;
+  margin: 0 auto;
+}
+.block .intro {
+  text-align: center;
+  padding-top: 80px;
+}
+.block .intro .outputBlock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.block .intro .outputBlock .inner-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.block .intro .outputBlock .inner-block .task {
+  margin-right: 20px;
+  color: black;
+  font-family: "Itim", cursive;
+}
+.block .intro .outputBlock .inner-block .doneBtn {
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(62, 173, 157);
+  font-family: "Itim", cursive;
+  color: white;
+}
+.block .intro h1 {
+  font-family: "Itim", cursive;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: rgb(78, 131, 132);
+}
+.block .intro .form {
+  padding-bottom: 20px;
+}
+.block .intro .form input {
+  width: 350px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+.block .intro .form input::-webkit-input-placeholder {
+  color: black;
+  font-family: "Itim", cursive;
+}
+.block .intro .form input::-moz-placeholder {
+  color: black;
+  font-family: "Itim", cursive;
+}
+.block .intro .form input:-ms-input-placeholder {
+  color: black;
+  font-family: "Itim", cursive;
+}
+.block .intro .form input::-ms-input-placeholder {
+  color: black;
+  font-family: "Itim", cursive;
+}
+.block .intro .form input::placeholder {
+  color: black;
+  font-family: "Itim", cursive;
+}
+.block .intro .form button {
+  width: 170px;
+  border-radius: 10px;
+  background-color: rgb(62, 173, 157);
+  font-family: "Itim", cursive;
+  color: white;
+  border: none;
+}
+.block .intro p {
+  font-family: "Itim", cursive;
+  color: brown;
+  font-size: 25px;
+}

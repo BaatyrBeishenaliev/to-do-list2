@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    background-color: burlywood;
+}
+
+.block {
+    width: 1200px;
+    margin: 0 auto;
+
+    .intro {
+        text-align: center;
+        padding-top: 80px;
+
+        .outputBlock {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            align-items: center;
+            flex-direction: column;
+
+            .inner-block {
+                display: flex;
+
+                .task {
+                    margin-right: 20px;
+                    color: black;
+                    font-family: 'Itim', cursive;
+                }
+    
+                .doneBtn {
+                    width: 150px;
+                    height: 30px;
+                    border: none;
+                    border-radius: 10px;
+                    background-color: rgb(62, 173, 157);
+                    font-family: 'Itim', cursive;
+                    color: white;
+                }
+            }
+        }
+
+        h1 {
+            font-family: 'Itim', cursive;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: rgb(78, 131, 132);
+        }
+
+        .form {
+            padding-bottom: 20px;
+
+            input {
+                width: 350px;
+                border: none;
+                border-radius: 5px;
+                padding-left: 10px;
+            }
+
+            input::placeholder {
+                color: black;
+                font-family: 'Itim', cursive;
+            }
+
+            button {
+                width: 170px;
+                border-radius: 10px;
+                background-color: rgb(62, 173, 157);
+                font-family: 'Itim', cursive;
+                color: white;
+                border: none;
+            }
+        }
+
+        p {
+            font-family: 'Itim', cursive;
+            color: brown;
+            font-size: 25px;
+        }
+    }
+}

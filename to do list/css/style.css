@@ -1,87 +1,115 @@
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 body {
-  background-color: burlywood;
+  background: -webkit-gradient(linear, left top, right top, from(#ff7e5f), to(#feb47b));
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.task {
+  text-align: left;
 }
 
 .block {
   width: 1200px;
   margin: 0 auto;
-}
-.block .intro {
   text-align: center;
-  padding-top: 80px;
+  padding-top: 50px;
 }
-.block .intro .outputBlock {
+.block h2 {
+  margin-bottom: 20px;
+  font-family: "Itim", cursive;
+  font-weight: normal;
+}
+.block .outputBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
+}
+.block .outputBlock .inner-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.block .outputBlock .inner-block .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.block .intro .outputBlock .inner-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.block .outputBlock .inner-block .right .doneBtn {
+  margin-bottom: 10px;
 }
-.block .intro .outputBlock .inner-block .task {
-  margin-right: 20px;
+.block .outputBlock .inner-block .task {
+  margin-right: 80px;
   color: black;
-  font-family: "Itim", cursive;
 }
-.block .intro .outputBlock .inner-block .doneBtn {
+.block .outputBlock .inner-block .doneBtn {
   width: 150px;
-  height: 30px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  height: 30px;
   background-color: rgb(62, 173, 157);
-  font-family: "Itim", cursive;
   color: white;
+  font-family: "Itim", cursive;
 }
-.block .intro h1 {
+.block .outputBlock .inner-block .doneBtn:hover {
+  background-color: white;
+  color: black;
+}
+.block h1 {
   font-family: "Itim", cursive;
   font-weight: 500;
   margin-bottom: 20px;
-  color: rgb(78, 131, 132);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8E2DE2), to(#4A00E0));
+  background-image: linear-gradient(to right, #8E2DE2, #4A00E0);
 }
-.block .intro .form {
+.block .form {
   padding-bottom: 20px;
+  margin-top: 20px;
 }
-.block .intro .form input {
+.block .form input {
   width: 350px;
   border: none;
   border-radius: 5px;
   padding-left: 10px;
 }
-.block .intro .form input::-webkit-input-placeholder {
+.block .form input::-webkit-input-placeholder {
   color: black;
   font-family: "Itim", cursive;
 }
-.block .intro .form input::-moz-placeholder {
+.block .form input::-moz-placeholder {
   color: black;
   font-family: "Itim", cursive;
 }
-.block .intro .form input:-ms-input-placeholder {
+.block .form input:-ms-input-placeholder {
   color: black;
   font-family: "Itim", cursive;
 }
-.block .intro .form input::-ms-input-placeholder {
+.block .form input::-ms-input-placeholder {
   color: black;
   font-family: "Itim", cursive;
 }
-.block .intro .form input::placeholder {
+.block .form input::placeholder {
   color: black;
   font-family: "Itim", cursive;
 }
-.block .intro .form button {
+.block .form button {
   width: 170px;
   border-radius: 10px;
   background-color: rgb(62, 173, 157);
@@ -89,7 +117,12 @@ body {
   color: white;
   border: none;
 }
-.block .intro p {
+.block .form button:hover {
+  background-color: dodgerblue;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.block p {
   font-family: "Itim", cursive;
   color: brown;
   font-size: 25px;
